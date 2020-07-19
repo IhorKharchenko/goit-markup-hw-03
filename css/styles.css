@@ -4,6 +4,14 @@
 /* Вспомагательный белый rgba(255, 255, 255, 0.6) */
 /* акцент #2196F3; */
 /* Основной фон кнопки  #F5F4FA; */
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
 :root {
 	--primary-text-color: #757575;
 	--title-text-color: #212121;
@@ -22,6 +30,8 @@ body {
 
 /* утилита точек */
 .list {
+	padding: 0;
+	margin: 0;
 	list-style: none;
 }
 /* утилита линков */
@@ -31,7 +41,12 @@ body {
 .site-nav .link {
 	color: var(--title-text-color);
 }
-
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	outline: 2px solid tomato;
+}
 /* header */
 header .list {
 	font-weight: 500;
@@ -66,19 +81,23 @@ header .list {
 }
 
 /* hero */
+.hero {
+	text-align: center;
+}
 .hero .title {
+	margin-top: 0;
+	margin-bottom: 30px;
 	color: var(--primary-white-color);
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
-	text-align: center;
 	letter-spacing: 0.06em;
 }
 .hero .button,
 .footer .button {
 	font-weight: 700;
 	font-size: 16px;
-	line-height: 1.88;
+	line-height: 1.87;
 	letter-spacing: 0.06em;
 }
 
@@ -162,8 +181,18 @@ header .list {
 
 /* button */
 .button {
+	display: inline-block;
 	color: var(--primary-text-color);
 	background-color: var(--primary-white-color);
+	border-radius: 4px;
+	padding: 10px 32px;
+	min-width: 200px;
+	text-align: center;
+}
+.button-icon {
+	display: inline-block;
+	/* margin-left: 10px; */
+	vertical-align: middle;
 }
 .button.primary {
 	color: var(--primary-white-color);

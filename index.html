@@ -15,29 +15,32 @@
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
+		<div class="container"></div>
 		<!-- Шапка сайта -->
 		<header>
-			<nav>
-				<a class="logo link" href="./index.html">
-					<span class="logo-text">Web</span>
-					Studio
-				</a>
-				<ul class="site-nav list">
-					<li><a href="./index.html" class="link current">Студия</a></li>
-					<li><a href="./portfolio.html" class="link">Портфолио</a></li>
-					<li><a href="" class="link">Контакты</a></li>
+			<div class="container">
+				<nav>
+					<a class="logo link" href="./index.html">
+						<span class="logo-text">Web</span>
+						Studio
+					</a>
+					<ul class="site-nav list">
+						<li><a href="./index.html" class="link current">Студия</a></li>
+						<li><a href="./portfolio.html" class="link">Портфолио</a></li>
+						<li><a href="" class="link">Контакты</a></li>
+					</ul>
+				</nav>
+				<ul class="contact-nav list">
+					<li>
+						<img src="./images/envelope.svg" alt="envelope" />
+						<a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+					</li>
+					<li>
+						<img src="./images/smartphone.svg" alt="smartphone" />
+						<a href="tel:380961111111" class="link">+38 096 111 11 11</a>
+					</li>
 				</ul>
-			</nav>
-			<ul class="contact-nav list">
-				<li>
-					<img src="./images/envelope.svg" alt="envelope" />
-					<a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
-				</li>
-				<li>
-					<img src="./images/smartphone.svg" alt="smartphone" />
-					<a href="tel:380961111111" class="link">+38 096 111 11 11</a>
-				</li>
-			</ul>
+			</div>
 		</header>
 		<main>
 			<!-- Герой -->
@@ -375,7 +378,7 @@
 				<h3 class="title">Подпишитесь на рассылку</h3>
 				<a href="" class="button primary link">
 					Подписаться
-					<img src="./images/icon-send.svg" alt="Иконка отправки сообщения" />
+					<img class="button-icon" src="./images/icon-send.svg" alt="Иконка отправки сообщения" />
 				</a>
 			</section>
 		</footer>
