@@ -85,6 +85,9 @@ header .list {
 /* hero */
 .hero {
 	text-align: center;
+	margin-bottom: 93px;
+
+	background-color: tomato;
 }
 .hero .title {
 	margin-top: 0;
@@ -187,7 +190,7 @@ header .list {
 	color: var(--primary-text-color);
 	background-color: var(--primary-white-color);
 	border-radius: 4px;
-	padding: 10px 32px;
+	padding: 10px 29px;
 	min-width: 200px;
 	text-align: center;
 }
@@ -200,7 +203,7 @@ header .list {
 	color: var(--primary-white-color);
 	background-color: var(--accent-color);
 }
-.button.button.primary:hover {
+.button.primary:hover {
 	color: var(--accent-color);
 	background-color: var(--primary-white-color);
 }
