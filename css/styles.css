@@ -38,6 +38,7 @@ body {
 .link {
 	text-decoration-line: none;
 }
+
 .site-nav .link {
 	color: var(--title-text-color);
 }
@@ -82,6 +83,14 @@ header .list {
 	color: var(--accent-color);
 }
 
+.title {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.section-title {
+	margin-top: 0;
+	margin-bottom: 50px;
+}
 /* hero */
 .hero {
 	text-align: center;
@@ -108,11 +117,11 @@ header .list {
 
 /* section */
 .section-title {
+	text-align: center;
 	color: var(--title-text-color);
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
-	text-align: center;
 }
 
 /* features */
@@ -121,11 +130,20 @@ header .list {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
+	margin-bottom: 10px;
 }
 .features p {
+	margin-top: 0;
+	margin-bottom: 0;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.71;
+}
+.features-logo {
+	margin-bottom: 30px;
+}
+section > .container {
+	margin-bottom: 93px;
 }
 
 /* Чем мы занимаемся */
@@ -137,18 +155,32 @@ header .list {
 }
 
 /* team */
+.container.team {
+	padding-top: 93px;
+	padding-bottom: 93px;
+}
 .team .title {
+	margin-bottom: 10px;
 	color: var(--title-text-color);
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;
 	text-align: center;
 }
+
 .team p {
+	margin-top: 0;
+	margin-bottom: 16px;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.19;
 	text-align: center;
+}
+.team .photo {
+	margin-bottom: 30px;
+}
+.team .social {
+	margin-bottom: 24px;
 }
 
 /* footer */
