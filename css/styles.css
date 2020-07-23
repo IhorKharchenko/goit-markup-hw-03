@@ -229,11 +229,25 @@ section.features {
 
 /* footer */
 .footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
 	color: var(--primary-white-color);
 	background-color: var(--footer-background-color);
 }
+.main-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .footer .logo {
+	display: flex;
 	color: var(--primary-white-color);
+	margin-bottom: 20px;
+}
+.address {
+	display: flex;
+	flex-direction: column;
 }
 .address .link {
 	color: var(--additional-white-color);
@@ -243,6 +257,7 @@ section.features {
 	color: var(--accent-color);
 }
 .address p {
+	margin: 0;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 14px;
@@ -254,10 +269,16 @@ section.features {
 	font-size: 14px;
 	line-height: 1.71;
 }
+
 .footer .title {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.43;
+	margin-bottom: 20px;
+}
+
+.social.list {
+	display: flex;
 }
 
 /* button */
