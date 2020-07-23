@@ -72,7 +72,7 @@ header .list {
 	font-family: Raleway, sans-serif;
 	font-weight: 700;
 	font-size: 26px;
-	line-height: 1.2;
+	line-height: 1.19;
 }
 
 .main-nav {
@@ -141,6 +141,14 @@ main section:not(:nth-child(-n + 2)) {
 	margin-top: 0;
 	margin-bottom: 50px;
 }
+
+.flexbox {
+	display: flex;
+}
+.content-box {
+	width: calc((100% - 30px * 3) / 4);
+}
+
 /* hero */
 .hero {
 	text-align: center;
@@ -194,6 +202,9 @@ section.features {
 	margin-bottom: 30px;
 }
 
+.section .flexbox {
+	justify-content: space-between;
+}
 /* Чем мы занимаемся */
 .development .title {
 	font-weight: 700;
@@ -240,14 +251,16 @@ section.features {
 	justify-content: space-between;
 }
 
+.footer-address {
+	width: calc((100% - 30px * 3) / 4);
+}
 .footer .logo {
 	display: flex;
 	color: var(--primary-white-color);
 	margin-bottom: 20px;
 }
-.address {
-	display: flex;
-	flex-direction: column;
+.address.list .item + .item {
+	margin-top: 9px;
 }
 .address .link {
 	color: var(--additional-white-color);
@@ -276,9 +289,23 @@ section.features {
 	line-height: 1.43;
 	margin-bottom: 20px;
 }
-
+.social-links {
+	width: calc((100% - 30px * 3) / 4);
+}
 .social.list {
 	display: flex;
+}
+.social.list .item + .item {
+	margin-left: 10px;
+}
+
+.subscribe {
+	display: flex;
+	flex-direction: column;
+	width: calc((100% - 30px) / 2);
+}
+.subscribe .button.primary {
+	align-self: flex-end;
 }
 
 /* button */
